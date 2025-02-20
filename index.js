@@ -1,7 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     const submitButton = document.querySelector(".button_outer button");
     const graphContainer = document.querySelector(".graph_div");
-    const speciesNameInput = document.querySelector(".screen input");
+    const speciesNameInput = document.querySelector(".species-name");
+    const screenElement = document.querySelector(".screen");
+
+    // Add CSS styles to center the text in screen element
+    screenElement.style.display = "flex";
+    screenElement.style.justifyContent = "center";
+    screenElement.style.alignItems = "center";
 
     const ctx = document.createElement("canvas");
     graphContainer.appendChild(ctx);
@@ -41,8 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const lifespanInDays = convertToDays(lifespan, bottomSelects[3].value);
 
         const totalSimulationDays = convertToDays(totalTimeElapsed, "Years");
-        const reproductionCycle = reproductionAge + gestationDays + intervalBetweenPregnancies;
-
+        
         let alive = initialPopulation;
         let totalDeaths = 0;
         let totalPopulation = initialPopulation;
@@ -81,6 +86,9 @@ document.addEventListener("DOMContentLoaded", function () {
             birthData.push(newBirths);
             labels.push(`Year ${year}`);
         }
+
+        // Update the screen element with current alive population
+        screenElement.textContent = alive.toLocaleString();
 
         updateChart(labels, populationData, deathData, aliveData, birthData, speciesName);
     }

@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const totalDays = convertToDays(totalTimeElapsed, "Years");
 
-        // Calculate RGI (Reproductive Generation Interval)
         const RGI = ageReproductionEndDays - ageReporductionBeginDays + 
                    gestationDays + intervalBetweenPregnancies;
 

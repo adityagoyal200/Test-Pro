@@ -1,0 +1,157 @@
+@media screen and (min-width:768px) and (max-width:1024px){
+    .bottom_col {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .mid_col { 
+        flex-wrap: wrap;
+    }
+    .mid_col>div {
+
+        max-width: 50%;
+        margin-bottom: 15px;
+    }
+    .mid_col>div input {
+        height: 55px;
+        max-height: 55px;
+        max-width: 130px;
+        background: #e6e2d9;
+    }
+    .bottom_col>div {
+        width: 100%;
+        max-width: 100%;
+    }
+    .screen {
+        width: 150px;
+    }
+    .info h3 {
+        font-size: 18px;
+    }
+    .species-name {
+        font-size: 24px;
+        padding: 10px 10px;
+        width: 100%;
+        max-width: 270px;
+    }
+}
+@media screen and (max-width:767px){
+    .info h3 {
+        font-size: 18px;
+    }
+    .info p {
+        font-size: 18px;
+    }
+    .screen {
+        width: 150px;
+        height: 50px;
+    }
+    .species-name {
+        font-size:14px;
+        height: 50px;
+    }
+    .banner .icon {
+        margin-left: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    .banner .icon img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    p.mid-text {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .mid_col {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        padding: 15px 0px;
+    }
+    .bottom_col {
+        display: flex;
+        padding-top: 20px;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .bottom_col>div {
+        width: 100%;
+        max-width: 100%;
+    }
+    .mid_col>div {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .bottom_input_outer>div select {
+        font-size: 14px;
+    }
+    .mid_col>div input {
+        height: 40px;
+        max-width: 115px;
+    }
+    .bottom_input_outer input {
+        height: 40px;
+        max-width: 115px;
+    }
+    .bottom_input_outer>div select {
+        height: 40px;
+    }
+    .bottom_input_outer input {
+        height: 100%;
+        min-height: 40px;
+        max-height: 40px;
+    }
+    .button_outer button {
+        padding: 13px 32px;
+        font-size: 14px;
+    }
+    .vertical_text {
+        padding: 0px 30px 0px 0px;
+    }
+    .duration_div {
+        padding-top: 20px;
+        margin-left: 0px;
+    }
+    .species-name {
+        height: 50px;
+        width: 50%;
+    }
+    .banner {
+        flex-wrap: wrap;
+        gap: 15px;
+        flex-direction: column-reverse;
+    }
+    .banner>div {
+        width: 100%;
+    }
+    .screen {
+        margin-right: 0px;
+    }
+    .bottom_input_outer>div select{
+        width: auto;
+    }
+    .right_inner {
+        display: flex;
+        flex-direction: column;
+    }
+    .vertical_text p {
+        writing-mode: horizontal-tb;
+        text-orientation: upright;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .vertical_text {
+        padding: 0;
+    }
+    .bottom_input_outer>div {
+        gap: 10px;
+    }
+    .population_outer .container {
+        padding: 15px;
+    }
+
+    
+}
